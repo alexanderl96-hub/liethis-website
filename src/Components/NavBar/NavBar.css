@@ -1,5 +1,6 @@
 .mainContainer{
- background: url('https://cdn.pixabay.com/photo/2013/12/17/20/10/bubbles-230014__340.jpg')
+ background: url('https://cdn.pixabay.com/photo/2013/12/17/20/10/bubbles-230014__340.jpg');
+ box-shadow: 0px 2px #2b2a2a;
 }
 .mainWrap{
     display: flex;

@@ -1,0 +1,41 @@
+.mainAfro{
+    margin-top: -20px;
+    background: url('https://i.imgur.com/4gK2YfM.jpg');
+}
+.mainAfroH2{
+    color: white;
+    padding-top: 10px;
+}
+.missionAfro{
+    margin: 20px;
+    font-size: 17px;
+    color: rgb(18, 11, 11);
+    background-color: rgba(209, 200, 200, 0.347);
+    border-radius: 30px;
+    padding:2px;
+}
+.mainAfroH4{
+    font-family: cursive;
+    font-size:20px;
+    background: -webkit-linear-gradient(#eee, rgb(180, 66, 66));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+}
+.mainAfroH4:hover{
+    transform: scale(2, 2);
+    background: -webkit-linear-gradient(rgb(27, 25, 25), rgb(223, 211, 211));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+}
+.mainWrapDiv{
+    display:flex; 
+    flex-direction:column; 
+    justify-content: center; 
+    gap: 30px;
+}
+.allPrograms{
+    display:flex; 
+    justify-content: center;
+     gap: 30px; 
+     margin: 15px;
+}

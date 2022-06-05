@@ -1,0 +1,15 @@
+
+.mainDivWrap{
+    display: flex;
+}
+.homeImgDiv{
+    margin-left: 10px;
+}
+.imag{
+    width: 610px; 
+    height: 416.5px;
+}
+.divTextwrap{
+    margin: 8.8%; 
+    flex-wrap:wrap;
+}
