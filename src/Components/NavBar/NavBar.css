@@ -1,0 +1,38 @@
+.mainContainer{
+ background: url('https://cdn.pixabay.com/photo/2013/12/17/20/10/bubbles-230014__340.jpg')
+}
+.mainWrap{
+    display: flex;
+    justify-content: space-around; 
+    padding-top: 10px;
+    font-size: 20px;
+    
+}
+.linksWrapper{
+    text-decoration: none; 
+    color: white;
+    transition: all 0.7s;  
+    padding: 3px;
+}
+.linksWrapper:hover{
+   background-color: rgba(174, 174, 215, 0.601);
+   color: black;
+   border-radius: 30px;
+   padding: 3px;
+   transition: all 0.7s;    
+}
+.nameWrapp{
+    text-align: start; 
+    margin-left: 20px; 
+    padding-bottom: 3px; 
+    color: white; 
+    font-family: cursive;  
+    transition: all 1.7s;
+}
+.nameWrapp:hover{
+    /* margin: 10; */
+    text-align: end;
+    transition: all 1.7s;
+    color: black; 
+    
+}
