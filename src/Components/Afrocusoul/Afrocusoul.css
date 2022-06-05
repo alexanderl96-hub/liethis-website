@@ -1,6 +1,10 @@
 .mainAfro{
     margin-top: -20px;
     background: url('https://i.imgur.com/4gK2YfM.jpg');
+    animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+    -o-animation: fadein 1.5s;
 }
 .mainAfroH2{
     color: white;

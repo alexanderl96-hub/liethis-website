@@ -3,7 +3,7 @@ import './Home.css'
 
 const Home = () => {
   return (
-    <div >
+    <div className="home">
         <h3><em>"Performing arts is not a luxury but a necessity for humanity"</em></h3>
         <div className="mainDivWrap">
             <div className="homeImgDiv">
