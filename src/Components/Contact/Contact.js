@@ -1,20 +1,47 @@
-import React from 'react'
+import React, { useRef} from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.css'
 
 const Contact = () => {
+   const form = useRef();
+   let nameUser = '';
+
+   function greet() {
+    alert(`Thanks you  Mrs./Ms. ${nameUser}`);
+   }
+   
+   const userTarget = (e)=> {
+    let {value} = e.target
+     nameUser = value
+   }
+
+   //change the server to liethis email address
+  const handleSubmit = (e)=>{
+    e.preventDefault();
+    emailjs.sendForm('service_l9ugyfa', 'template_sg2t9wa', form.current, '3QmzbJgYVWWAUxKwm')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      form.current.reset()
+    setTimeout(greet); 
+  }
+console.log(nameUser)
   return (
     <div className="contact"> 
-            <form style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                <label for="Name" style={{margin: '2px', fontFamily: 'cursive', fontSize: '24px'}} > Name and Last Name :</label>
-                <input type="text" className="" style={{width: '350px', height: '24px', fontSize: '18px'}} />
-                <label for="Email" style={{margin: '2px', fontFamily: 'cursive', fontSize: '24px'}}>Email :</label>
-                <input type="email" className="" style={{width: '350px', height: '24px', fontSize: '18px'}}/>
-                <label for="phone" style={{margin: '2px', fontFamily: 'cursive', fontSize: '24px'}}>Phone :</label>
-                <input type="text" className="" style={{width: '350px', height: '24px', fontSize: '18px'}}/>
-                <label for="Message" style={{margin: '2px', fontFamily: 'cursive', fontSize: '24px'}}>Message :</label>
-                <textarea id='Message' name='Message' className=""style={{height:"200px", width: '350px',fontSize: '15px'}}/>
-                <button type="button" className="" style={{margin: '15px', cursor: 'pointer'}}>Send Message</button>
+            <form ref={form}  onSubmit={handleSubmit} className='contactForm'>
+                <label className='contactLabel' > Name and Last Name :</label>
+                <input id='from_name' type="text" name="from_name" onChange={userTarget} className="contactInput" required />
+                <label className='contactLabel' >Email :</label>
+                <input type="email" name="from_email"  className="contactInput" required />
+                <label  className='contactLabel'>Phone :</label>
+                <input  type="text" name="phone" className="contactInput"  />
+                <label className='contactLabel'>Message :</label>
+                <textarea name="message" className="contactTextarea" required/>
+                <button type="submit" className="contactSubmit" value="Send" >Send Message</button>
             </form>
+
     </div>
   )
 }

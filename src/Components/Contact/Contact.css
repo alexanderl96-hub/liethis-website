@@ -7,3 +7,32 @@
     -webkit-animation: fadein 1.5s; /* Safari and Chrome */
     -o-animation: fadein 1.5s; 
 }
+.contactForm{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+.contactLabel{
+    margin: 2px; 
+    font-family: cursive; 
+    font-size: 24px;
+}
+.contactInput{
+    width: 350px; 
+    height: 27px; 
+    font-size: 18px;
+    border-radius: 30px;
+   text-align: center;
+}
+.contactTextarea{
+    height: 200px;
+    width: 350px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.contactSubmit{
+    margin: 16px; 
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: justify;
+}
