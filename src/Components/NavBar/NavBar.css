@@ -7,7 +7,6 @@
     justify-content: space-around; 
     padding-top: 10px;
     font-size: 20px;
-    
 }
 .linksWrapper{
     text-decoration: none; 
@@ -36,4 +35,40 @@
     transition: all 1.7s;
     color: black; 
     
+}
+@media only screen and (max-width: 768px){
+    .mainContainer{
+        background: url('https://cdn.pixabay.com/photo/2013/12/17/20/10/bubbles-230014__340.jpg');
+        box-shadow: 0px 2px #2b2a2a;
+        padding: 5px;
+       }
+    .mainWrap{
+        display: flex;
+        justify-content: space-between; 
+        text-align: center;
+        /* padding-top: 10px; */
+        font-size: 14px;  
+        width: 100%;
+    }
+    .linksWrapper{
+        text-decoration: none; 
+        color: white;
+        transition: all 0.7s;  
+        padding: 3px;
+    }
+    .nameWrapp{
+        text-align: start; 
+        margin-left: 80px; 
+        margin-bottom: -10px;
+        color: white; 
+        font-family: cursive;  
+        transition: all 1.7s;
+    }
+    .nameWrapp:hover{
+        text-align: center; 
+        margin-left: -80px;
+        transition: all 2.7s;
+        color: black; 
+        
+    }
 }

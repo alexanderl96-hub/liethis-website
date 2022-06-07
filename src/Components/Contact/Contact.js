@@ -15,10 +15,9 @@ const Contact = () => {
      nameUser = value
    }
 
-   //change the server to liethis email address
   const handleSubmit = (e)=>{
     e.preventDefault();
-    emailjs.sendForm('service_l9ugyfa', 'template_sg2t9wa', form.current, '3QmzbJgYVWWAUxKwm')
+    emailjs.sendForm('service_ayuont9', 'template_fz660jg', form.current, '3QmzbJgYVWWAUxKwm')
       .then((result) => {
           console.log(result.text);
       }, (error) => {

@@ -10,7 +10,7 @@ const Home = () => {
                 <img src='https://i.imgur.com/2PO5VlQ.jpg' alt='Liethis' className='imag' />
             </div>
             <div className="divTextwrap">
-                <h2>The power of creative Art </h2>
+                <h2 className="divTextwraph2">The power of creative Art </h2>
                 Movement has healing properties  in general, dance  
                 has been known to heal people mentally, spiritually,  in some cases  physically.  
                 According to an article published last year by Shannon Sexton, “Dancing can boost mood, 

@@ -49,3 +49,44 @@
     opacity: 1;
     margin-top: 10px;
 }
+@media only screen and (max-width: 768px){
+    .mainFooter{
+        background-color: #101522;
+        padding: 25px 24px;
+        margin-bottom: 0;
+    }
+    .mainFooterWrap{
+        display: flex; 
+        justify-content: space-evenly;
+        padding: 8px;
+    }
+    .footerlinks{
+        text-decoration: none; 
+        color: white; 
+        transition: all 0.5s;
+        font-size: 15px; 
+        padding: 3px;
+    }
+    .footerlinksSocial{
+        display: flex; 
+        justify-content: space-around;
+        padding-top: 3px;
+    }
+    .footerHome{
+        color: white;
+        text-decoration: none;
+    }
+    .footerYear{
+        color: white;
+    }
+    .footerIcons{
+        color: white;
+        display: flex;
+        gap: 18px;
+    }
+    .footeraTag{
+        text-decoration: none;
+        font-size: 24px;
+        color: white;
+    }
+}
