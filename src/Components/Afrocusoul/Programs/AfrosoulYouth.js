@@ -3,7 +3,7 @@ import './AfrosoulYouth.css'
 const AfrosoulYouth = () => {
   return (
     <div>
-        <h1>Afrosoul Youth Program</h1>
+        <h1 className='title'>Afrosoul Youth Program</h1>
         <div className='afrosoulYoutext'>
         Afrosoul Youth Program  is a series of creative workshops and performances for the young 
         and the young at heart. Master artists from Afrocusoul platform  in workshops that encourage 

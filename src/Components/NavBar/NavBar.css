@@ -54,7 +54,8 @@
         text-decoration: none; 
         color: white;
         transition: all 0.7s;  
-        padding: 3px;
+        padding: 3.3px;
+        font-size: 16.5px;
     }
     .nameWrapp{
         text-align: start; 

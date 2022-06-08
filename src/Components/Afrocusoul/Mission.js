@@ -11,7 +11,7 @@ const Mission = () => {
         <h2 className='mainAfroH2'>Afrocusoul Dance & Wellness</h2>
        <h3>Mission Statement</h3>
        <div className='missionAfro'>
-           AfroCuSoul, is a company that  acknowledges the authenticity of under-represent 
+           AfroCuSoul, is a company that  acknowledges the authenticity of under represent 
            individuals in the African diaspora within the performing arts.  We seek to provide 
            opportunities for artists and the community to connect,  educate and represent 
            creative arts locally  and internationally. 
@@ -24,7 +24,7 @@ const Mission = () => {
                         <div><AfrosoulNYC/></div>
                         <div><AfrosoulYouth/></div>
                         <div><WomenMotion/></div>
-                    </div>
+                </div>
            </div>
            <div>
               <h3>Workshops</h3>

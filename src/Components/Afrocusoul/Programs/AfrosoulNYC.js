@@ -4,7 +4,7 @@ import './AfrosoulNYC.css'
 const AfrosoulNYC = () => {
   return (
     <div>
-        <h1>Afrosoul NYC Experience</h1>
+        <h1 className='title'>Afrosoul NYC Experience</h1>
         <div className='afrosoulNYtext'> 
             Afrosoul NYC Experience is a media  platform where we can talk about  
             culture itself, self identity, matters  of the Performing Arts  

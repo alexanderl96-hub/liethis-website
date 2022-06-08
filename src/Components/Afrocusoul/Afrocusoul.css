@@ -16,7 +16,7 @@
     color: rgb(18, 11, 11);
     background-color: rgba(209, 200, 200, 0.347);
     border-radius: 30px;
-    padding:2px;
+    padding:7.5px;
 }
 .mainAfroH4{
     font-family: cursive;
@@ -42,4 +42,53 @@
     justify-content: center;
      gap: 30px; 
      margin: 15px;
+}
+@media only screen and (max-width: 768px){
+    .mainAfro{
+        margin-top: -20px;
+        background: url('https://i.imgur.com/4gK2YfM.jpg');
+        animation: fadein 1.5s;
+        -moz-animation: fadein 1.5s; /* Firefox */
+        -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+        -o-animation: fadein 1.5s;
+    }
+    .mainAfroH2{
+        color: white;
+        padding-top: 8px;
+        font-size: 18px;
+    }
+    .missionAfro{
+        margin: 20px;
+        font-size: 15px;
+        background-color: rgba(174, 166, 166, 0.347);
+        border-radius: 30px;
+        padding:10px;
+        color: white;
+        text-align: justify;
+    }
+    .mainAfroH4{
+        font-family: cursive;
+        font-size: 20px;
+        background: -webkit-linear-gradient(#eee, rgb(180, 66, 66));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+    }
+    .mainAfroH4:hover{
+        transform: none;
+        background: -webkit-linear-gradient(rgb(27, 25, 25), rgb(223, 211, 211));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+    }
+    .mainWrapDiv{
+        display:flex; 
+        flex-direction:column; 
+        justify-content: center; 
+        color: white;
+    }
+    .allPrograms{
+        display:flex; 
+        flex-direction: column;
+        justify-content: center;
+         margin: 10px;
+    }
 }

@@ -6,3 +6,22 @@
    margin:10px;
    padding: 2px;
 }
+@media only screen and (max-width: 768px){
+    .title{
+        font-size: 18px;
+        border-radius: 30px;
+        background-color:rgba(34, 32, 32, 0.389);
+        width: 65%;
+        padding:2px;
+       text-align: center;
+       margin: 0 auto;
+    }
+    .afrosoulYoutext{
+        text-align: justify; 
+        border-radius: 10px;
+        background-color: rgba(113, 110, 110, 0.389);
+        font-size: 15px;
+        margin:10px;
+        padding: 7px;
+    }
+}
