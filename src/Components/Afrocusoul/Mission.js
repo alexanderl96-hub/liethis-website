@@ -27,17 +27,17 @@ const Mission = () => {
                 </div>
            </div>
            <div>
-              <h3>Workshops</h3>
-              <div style={{display:'flex', justifyContent: 'center', gap: '30px'}}>
+              <h3><Link to={'/afrocusoul/workshops/online'} style={{textDecoration: 'none', color: 'black'}} >Workshops</Link></h3>
+              {/* <div style={{display:'flex', justifyContent: 'center', gap: '30px'}}>
                         <div><Link to={'/afrocusoul/workshops/online'} >Online Events</Link></div>
                         <div><Link to={'/afrocusoul/workshops/inperson'} >In-person events</Link></div>
-                    </div>
+                    </div> */}
            </div>
            <div>
-               <h3>Events</h3>
-               <div style={{display:'flex', justifyContent: 'center', gap: '30px'}}>
+               <h3><Link to={'/afrocusoul/workshops/events'}  style={{textDecoration: 'none', color: 'black'}}  >Events</Link></h3>
+               {/* <div style={{display:'flex', justifyContent: 'center', gap: '30px'}}>
                         <div><Link to={'/afrocusoul/workshops/events'} >Sandunga Cuban Party</Link></div>
-                    </div>
+                    </div> */}
            </div>
        </div>
     </div>
