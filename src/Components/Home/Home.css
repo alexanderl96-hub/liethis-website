@@ -5,18 +5,19 @@
     -o-animation: fadein 2s;
 }
 .mainDivWrap{
-    display: flex;
+    /* display: flex; */
 }
 .homeImgDiv{
     margin-left: 10px;
 }
 .imag{
-    width: 610px; 
-    height: 416.5px;
+    min-width: 93%; 
+    max-height: 450px;
 }
 .divTextwrap{
-    margin: 8.8%; 
     flex-wrap:wrap;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 @keyframes fadein {
     from { opacity: 0; }

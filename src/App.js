@@ -20,16 +20,16 @@ function App() {
       <Router>
        <Navbar />
         <Routes>
-          <Route exact path='/' element={<Home/>}/>
-          <Route exact path='/about' element={<About/>}/>
-          <Route exact path ='/afrocusoul' element={<Afrocusoul/> }/>
+          <Route exact path='/Home' element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path ='/afrocusoul' element={<Afrocusoul/> }/>
           <Route path='/afrocusoul/workshops/online' element={<Online/>}/>
           <Route path='/afrocusoul/workshops/inperson' element={<Inperson/>}/>
           <Route path='/afrocusoul/workshops/events' element={<Events/>}/>
-          <Route exact path ='/galery' element={<Galery/> }/>
+          <Route path ='/galery' element={<Galery/> }/>
           <Route path='/galery/photos' element={<Photos/>}/>
           <Route path='/galery/videos' element={<Videos/>}/>
-          <Route exact path ='/contact' element={<Contact/> }/>
+          <Route path ='/contact' element={<Contact/> }/>
         </Routes>
         <Footer />
       </Router>
