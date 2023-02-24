@@ -7,9 +7,8 @@ const Footer = () => {
   return (
     <div className='mainFooter'>
         <div className='mainFooterWrap'>
-            <Link to={'/about'} className='footerlinks'>About</Link>
-            <Link to={'/afrocusoul'} className='footerlinks'>Afrocusoul Dance & Wellness</Link>
             <Link to={'/galery'} className='footerlinks'>Galery</Link>
+            <Link to={'/afrocusoul'} className='footerlinks'>Afrocusoul Dance & Wellness</Link>
             <Link to={'/contact'} className='footerlinks'>Contact</Link>
         </div>
         <div className='footerlinksSocial'>

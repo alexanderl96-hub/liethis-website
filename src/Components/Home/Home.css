@@ -11,8 +11,16 @@
     margin-left: 10px;
 }
 .imag{
-    min-width: 93%; 
-    max-height: 450px;
+    min-width: 73%; 
+    max-height: 550px;
+}
+.imag2{
+    min-width: 43%; 
+    max-height: 650px;
+}
+.imag3{
+    min-width: 40%; 
+    max-height: 670px;
 }
 .divTextwrap{
     flex-wrap:wrap;

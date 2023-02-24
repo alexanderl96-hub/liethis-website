@@ -1,7 +1,8 @@
 .contact{
-    color : white;
-    margin-top: -20px;
-    background: url('https://images.pexels.com/photos/355288/pexels-photo-355288.jpeg?auto=compress&cs=tinysrgb&w=1700');
+    color : black;
+    margin-top: 200px;
+    margin-left: 150px;
+    /* background: url('https://images.pexels.com/photos/355288/pexels-photo-355288.jpeg?auto=compress&cs=tinysrgb&w=1700'); */
     animation: fadein 1.5s;
     -moz-animation: fadein 1.5s; /* Firefox */
     -webkit-animation: fadein 1.5s; /* Safari and Chrome */
@@ -26,9 +27,10 @@
 }
 .contactTextarea{
     height: 200px;
-    width: 350px;
+    width: 353px;
     font-size: 15px;
     border-radius: 5px;
+    padding: 10px;
 }
 .contactSubmit{
     margin: 16px; 
