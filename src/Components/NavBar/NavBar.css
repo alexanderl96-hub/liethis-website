@@ -85,9 +85,25 @@
   border-right: 15px solid transparent;
   border-bottom: 15px solid #fff;
 }
-
-
-
+.linksDance{
+    margin: 1.5px;
+    border-radius: 6px;
+    padding: 2px;
+}
+.linksDance:hover{
+  background: rgba(7, 5, 30, 0.758);
+  border-radius: 6px;
+  padding: 2px;
+  transition: all 1s;
+}
+.linksDanceEnside{
+text-decoration: none;
+color:rgba(0, 0, 0, 0.566);
+}
+.linksDanceEnside:hover{
+    color: rgb(235, 237, 244);
+    transition: all .5s;
+}
 
 .linksWrapper{
     text-decoration: none; 

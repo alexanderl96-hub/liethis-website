@@ -43,7 +43,8 @@ const Navbar = () => {
                  {/* <div style={{margin:'3px'}}><Link to={'/about'} className=''>About</Link></div> 
                  <div style={{margin:'3px'}}><Link to={'/galery'} className=''>Galery</Link></div> 
                  <div style={{margin:'3px'}}><Link to={'/contact'} className=''>Contact</Link></div>  */}
-                 <div style={{margin:'3px'}}><Link to={'/afrocusoul'} className=''>Afrocusoul Dance & Wellness</Link></div> 
+                 <div  className='linksDance'>
+                  <Link to={'/afrocusoul'} className='linksDanceEnside'  >Afrocusoul Dance & Wellness</Link></div> 
                 
                 </div>}
 
@@ -55,7 +56,7 @@ const Navbar = () => {
          <div className='social-icon'>
                {/* <a href="https://www.facebook.com/OYUOROAFROCUBANEXPERIMENTALDANCEENSEMBLE"><img src={navIcon1} alt='' /></a> */}
                <a href="https://www.instagram.com/afrocusoultravel/"><img src={navIcon3}  alt='' /></a>
-               <a href="https://tinyurl.com/2s4j9dsu"><img src={navIcon2}  alt='' /></a>
+               <a href="https://www.facebook.com/liethis5hechavarria"><img src={navIcon2}  alt='' /></a>
                <a href="https://www.youtube.com/@Cubanclassrooms5/about"><img src={navIcon4}  alt=''  /></a>
                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Flinktr.ee%2FAfrocusoul%3Ffbclid%3DIwAR04wcsjTdVMAU-lZN1Ckhql-ElX-A0kCOhXRtSSi3osw1Mr9grKuUnNLtM&h=AT3HzCck1yj9PtZ-gLjiRMucri3b2BR6ECVFaNhpKzKaZz-wmKsh2BUT5Ckx9Mjxi0S_usL28JrKzmnVTNnm8xzkuHogTrWS3TkNHo2fCkjmjERgBfgKaRV9i0G_ym-ZPTCetD5Quuk_47jyE8rkMspy3gM"><img src={navIcon5}  alt=''  /></a>
          </div>
