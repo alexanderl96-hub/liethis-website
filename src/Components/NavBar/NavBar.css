@@ -86,19 +86,25 @@
   border-bottom: 15px solid #fff;
 }
 .linksDance{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 1.5px;
     border-radius: 6px;
-    padding: 2px;
+    font-size: 16px;
+    width: 100%;
+    height: 35px;
 }
 .linksDance:hover{
   background: rgba(7, 5, 30, 0.758);
   border-radius: 6px;
-  padding: 2px;
+  /* padding: 2px; */
   transition: all 1s;
 }
 .linksDanceEnside{
 text-decoration: none;
 color:rgba(0, 0, 0, 0.566);
+ padding: .5px;
 }
 .linksDanceEnside:hover{
     color: rgb(235, 237, 244);

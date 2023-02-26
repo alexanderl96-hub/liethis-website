@@ -40,11 +40,18 @@ const Navbar = () => {
               onMouseEnter={()=> setOpen('true')}
               onMouseLeave={()=> setOpen('false')}
               className='submenu'>
-                 {/* <div style={{margin:'3px'}}><Link to={'/about'} className=''>About</Link></div> 
+                 {/* 
                  <div style={{margin:'3px'}}><Link to={'/galery'} className=''>Galery</Link></div> 
                  <div style={{margin:'3px'}}><Link to={'/contact'} className=''>Contact</Link></div>  */}
+                 <div className='linksDance' >
+                    <Link to={'/about'} className='linksDanceEnside' >About</Link>
+                 </div> 
                  <div  className='linksDance'>
-                  <Link to={'/afrocusoul'} className='linksDanceEnside'  >Afrocusoul Dance & Wellness</Link></div> 
+                    <Link to={'/afrocusoul'} className='linksDanceEnside' >Afrocusoul Dance & Wellness</Link>
+                 </div> 
+                 <div className='linksDance' >
+                    <Link to={'/contact'} className='linksDanceEnside' >Contact</Link>
+                 </div> 
                 
                 </div>}
 

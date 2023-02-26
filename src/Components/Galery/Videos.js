@@ -158,33 +158,7 @@ const Viedos = () => {
                  border: '1px solid gray', cursor: 'pointer', color: 'gray'}} onClick={()=> allIndex2 === 'false' ? setAllIndex2('true') : setAllIndex2('false')}> Load More </div>
                </div>
 
-              
-       
-       
-{/*       
-
-{checkVideo === 'false'  &&  Number(id) !== 2 &&<div style={{backgroundImage: `url(${Liethis})`,   backgroundSize: '100% 100%',width: '330px', height: '260px'}} >
-        <div style={{display: 'flex',alignItems: 'center',justifyContent: 'center', marginTop: '30%', gap: '10px'}}>
-            <div 
-            onClick={getId}
-            id={2}
-            style={{ borderRadius: '50px', width: '40px', height: '40px', border:'3px solid white', 
-            display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>
-              <FaPlay style={{fill: 'white' }}  id={2} /> 
-            </div>
-            <h4 style={{color: 'white'}}>Play Video</h4>
-         </div>
-      </div>}
-      {Number(id) === 2 &&
-        <ReactPlayer 
-        url={videos[1]} 
-         playing={true} 
-        // loop={false}
-        progressInterval={1000}
-        controls={true}
-        width={'330px'} 
-        height={'260px'} 
-        muted={true} /> } */}
+ 
     </div>
   )
 }

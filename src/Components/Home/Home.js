@@ -49,9 +49,6 @@ const Home = () => {
         </div>
         <div style={{display: 'flex', justifyContent:'space-around',  marginBottom: '100px'}}>
            <Contact />
-           <div className="homeImgDiv" style={{marginTop: '100px',}}>
-                <img src={liethi2} alt='Liethis' className='imag3' />
-            </div>
         </div>
        
     </div>

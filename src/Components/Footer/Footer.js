@@ -6,11 +6,11 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div className='mainFooter'>
-        <div className='mainFooterWrap'>
+        {/* <div className='mainFooterWrap'>
             <Link to={'/galery'} className='footerlinks'>Galery</Link>
             <Link to={'/afrocusoul'} className='footerlinks'>Afrocusoul Dance & Wellness</Link>
             <Link to={'/contact'} className='footerlinks'>Contact</Link>
-        </div>
+        </div> */}
         <div className='footerlinksSocial'>
             
            <div ><Link to={'/'} className='footerHome'>Soul@NY</Link></div>
