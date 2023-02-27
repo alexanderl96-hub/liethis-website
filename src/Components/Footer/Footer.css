@@ -1,8 +1,7 @@
 .mainFooter{
     background-color: #101522;
-    padding: 25px 34px;
     margin-bottom: 0;
-    min-height: 50px;
+    min-height: 30px;
 }
 
 .footerlinks{
@@ -30,6 +29,7 @@
 }
 .footerYear{
     color: white;
+    margin-top: 20px;
 }
 .footerIcons{
     color: white;
@@ -46,6 +46,15 @@
    background-color: white;
     opacity: 1;
     margin-top: 10px;
+}
+.bycreator{
+    text-decoration: none;
+    font-size: 10.7px;
+    color: #4d4c4c
+
+}
+.bycreator:hover{
+    color: #0463cf;
 }
 @media only screen and (max-width: 768px){
     .mainFooter{

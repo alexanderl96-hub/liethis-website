@@ -1,5 +1,8 @@
 import React from 'react'
-import { FaYoutube, FaInstagram, FaFacebook } from 'react-icons/fa'
+import { FaYoutube, FaInstagram, FaFacebook, FaWifi,
+   FaWikipediaW, FaWind, FaWindowClose, FaWindowMaximize, 
+   FaWindowMinimize, FaWindowRestore, FaWindows, FaWineBottle, 
+   FaWineGlass, FaWineGlassAlt, FaWix, FaWizardsOfTheCoast, } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import './Footer.css'
 
@@ -15,11 +18,15 @@ const Footer = () => {
             
            <div ><Link to={'/'} className='footerHome'>Soul@NY</Link></div>
            <div className='footerYear'> 
-             Year {new Date().getFullYear()}</div>
+                <p> &copy; Afrocusoul {new Date().getFullYear()}. All rights reserved.</p>
+                <p > <a href='https://www.linkedin.com/in/alexander-la-rosa-p%C3%A9rez-2b36a085/' className='bycreator'
+                    >&copy;byAlexWeb</a></p>
+            </div>
            <div className='footerIcons'>
                <div><a href='https://www.youtube.com/channel/UCkHRgHPb_iWdW4dRaf3uMLg' arial-label='Youtube' className='footeraTag'><FaYoutube /></a></div> 
-               <div><a href='https://www.instagram.com/afrocusoul/' aria-label='Instagram' className='footeraTag'><FaInstagram /></a></div> 
+               <div><a href='https://www.instagram.com/afrocusoultravel/' aria-label='Instagram' className='footeraTag'><FaInstagram /></a></div> 
                <div><a href='https://www.facebook.com/liethis5hechavarria' aria-label='Facebook' className='footeraTag'><FaFacebook /></a></div> </div>
+              
         </div>
     </div>
   )
