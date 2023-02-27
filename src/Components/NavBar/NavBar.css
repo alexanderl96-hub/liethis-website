@@ -65,19 +65,20 @@
     padding: 10px 10px;
     position: absolute;
     top: 135px;
-    left: 30.5%;
+    left: 29.7%;
     z-index: 100;
     -webkit-filter: drop-shadow(0px 2px 4px rgba(130,130,130,1));
     filter        : drop-shadow(0px 2px 4px rgba(130,130,130,1));  
     display: flex;
     flex-wrap: wrap;
     /* color: white; */
+    cursor: pointer;
 }
 
 .submenu::before{
   content: "";
   position: relative;
-  left: 85px;
+  left: 80px;
   top: -25px;
   width: 0;
   height: 0;
@@ -119,7 +120,7 @@ color:rgba(0, 0, 0, 0.566);
     /* background-color: rgba(174, 174, 215, 0.601); */
 }
 .linksWrapper:hover{
-   background-color: rgba(174, 174, 215, 0.601);
+   background-color: rgba(199, 199, 222, 0.663);
    color: black;
    border-radius: 30px;
    transition: all 0.7s;    
