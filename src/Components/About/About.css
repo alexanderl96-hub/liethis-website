@@ -30,9 +30,11 @@
 .image{
     border-radius: 5px; 
     margin-left: 15%;
+    height: 550px;
+    width: 410px;
 }
 .storyText{
-    margin: 4%; 
+    margin: 2%; 
     flex-wrap: wrap; 
     text-align: justify; 
     font-size: 17px;

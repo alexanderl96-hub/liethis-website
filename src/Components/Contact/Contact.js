@@ -40,7 +40,7 @@ console.log(nameUser)
                   <input  type="text" name="phone" className="contactInput"  />
                   <label className='contactLabel'>Message :</label>
                   <textarea name="message" className="contactTextarea" required/>
-                  <button type="submit" className="contactSubmit" value="Send" >Send Message</button>
+                  <button type="submit" className="contactSubmit" value="Send" >Send</button>
               </form>
             </div>
             <div className="homeImgDiv" >

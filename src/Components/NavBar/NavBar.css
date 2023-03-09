@@ -90,7 +90,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1.5px;
+    margin: 1.3px;
     border-radius: 6px;
     font-size: 16px;
     width: 100%;
@@ -105,7 +105,7 @@
 .linksDanceEnside{
 text-decoration: none;
 color:rgba(0, 0, 0, 0.566);
- padding: .5px;
+ padding: .3px;
 }
 .linksDanceEnside:hover{
     color: rgb(235, 237, 244);

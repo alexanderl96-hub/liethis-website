@@ -1,6 +1,6 @@
 .mainAfro{
     margin-top: -20px;
-    background: url('https://i.imgur.com/4gK2YfM.jpg');
+    /* background: url('https://i.imgur.com/4gK2YfM.jpg'); */
     animation: fadein 1.5s;
     -moz-animation: fadein 1.5s; /* Firefox */
     -webkit-animation: fadein 1.5s; /* Safari and Chrome */
@@ -42,6 +42,37 @@
     justify-content: center;
      gap: 30px; 
      margin: 15px;
+}
+.description{
+    float: left;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 8px;
+    width: 600px;
+    height: 270px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(116, 93, 93);
+    padding: 10px 10px;
+    position: absolute;
+    top: 290px;
+    left: 49.7%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.description:before{
+    content: "";
+    position: relative;
+    left: 80px;
+    top: 25px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid  transparent;
+
 }
 @media only screen and (max-width: 768px){
     .mainAfro{

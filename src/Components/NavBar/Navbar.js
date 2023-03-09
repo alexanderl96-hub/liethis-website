@@ -28,7 +28,7 @@ const Navbar = () => {
          <div className="mainWrap">
               <div><Link to={'/'} className='linksWrapper'>Home </Link></div> 
               <div><Link to={'/Events'} className='linksWrapper'>Upcoming Events</Link></div> 
-              <div><Link to={'/galery'} className='linksWrapper'>Galery</Link></div> 
+              <div><Link to={'/galery'} className='linksWrapper'>Courses</Link></div> 
               <div style={{cursor: 'pointer', color: 'white', marginLeft: '10px'}}
                
                 onMouseEnter={()=> setOpen('true')}
@@ -47,12 +47,17 @@ const Navbar = () => {
                     <Link to={'/about'} className='linksDanceEnside' >About</Link>
                  </div> 
                  <div  className='linksDance'>
-                    <Link to={'/afrocusoul'} className='linksDanceEnside' >Afrocusoul Dance & Wellness</Link>
+                    <Link to={'/afrocusoul'} className='linksDanceEnside' >MADAS</Link>
+                 </div> 
+                 <div className='linksDance' >
+                    <Link to={'/'} className='linksDanceEnside' >Past Work</Link>
+                 </div> 
+                 <div className='linksDance' >
+                    <Link to={'/'} className='linksDanceEnside' >Service</Link>
                  </div> 
                  <div className='linksDance' >
                     <Link to={'/contact'} className='linksDanceEnside' >Contact</Link>
                  </div> 
-                
                 </div>}
 
               {/* <div><Link to={'/about'} className='linksWrapper'>About</Link></div> 
