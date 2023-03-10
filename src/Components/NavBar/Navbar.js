@@ -16,7 +16,7 @@ const Navbar = () => {
     <div className="mainContainer">
        <div  className= 'nameWrapp2'> </div>
       
-       <div  className= 'nameWrapp'> Liethis Hechavarria</div>
+     
          {/* <div className="mainWrap">
               <div ><Link to={'/Home'} className='linksWrapper'>Home </Link></div> 
               <div ><Link to={'/about'} className='linksWrapper'>About</Link></div> 
@@ -50,10 +50,10 @@ const Navbar = () => {
                     <Link to={'/afrocusoul'} className='linksDanceEnside' >MADAS</Link>
                  </div> 
                  <div className='linksDance' >
-                    <Link to={'/'} className='linksDanceEnside' >Past Work</Link>
+                    <Link to={'/afrocusoul/ArtistWork/ArtistWork'} className='linksDanceEnside' >Artist Work</Link>
                  </div> 
                  <div className='linksDance' >
-                    <Link to={'/'} className='linksDanceEnside' >Service</Link>
+                    <Link to={'/afrocusoul/Service/Service'} className='linksDanceEnside' >Service</Link>
                  </div> 
                  <div className='linksDance' >
                     <Link to={'/contact'} className='linksDanceEnside' >Contact</Link>

@@ -1,20 +1,22 @@
 import React from 'react'
 import './Home.css'
+import './../NavBar/NavBar.css'
 import liethiPresentation from '../../Images/IMG_6550.JPG'
-import liethiMiddle from '../../Images/FB_IMG_1450260439547.jpg'
+// import liethiMiddle from '../../Images/FB_IMG_1450260439547.jpg'
 import liethiCreative from '../../Images/LiethisCreative.jpeg'
 // import liethi from '../../Images/imagesliethis.jpeg'
-import liethi2 from '../../Images/imagesliethis2.jpeg'
+// import liethi2 from '../../Images/imagesliethis2.jpeg'
 import Contact from '../Contact/Contact'
 
 const Home = () => {
   return (
     <div className="home">
-        <h3><em>"Performing arts is not a luxury but a necessity for humanity"</em></h3>
+        <div  className= 'nameWrapp'> Liethis Hechavarria</div>
         <div className="mainDivWrap">
             <div className="homeImgDiv">
                 <img src={liethiPresentation} alt='Liethis' className='imag' />
             </div>
+            <h3><em>"Performing arts is not a luxury but a necessity for humanity"</em></h3>
             {/* <div className="divTextwrap">
                 <h2 className="divTextwraph2">The power of creative Art </h2>
                 Movement has healing properties  in general, dance  
@@ -26,9 +28,6 @@ const Home = () => {
              </div> */}
         </div>
 
-        {/* <div className="homeImgDiv" style={{marginTop: '100px',}}>
-                <img src={liethiMiddle} alt='Liethis' className='imag2' />
-            </div> */}
         <div className="" style={{display: 'flex', marginTop: '100px', paddingLeft: '3%',paddingRight: '3%',  marginBottom: '100px'}}>
             <div className="homeImgDiv">
                 <img src={liethiCreative} alt='Liethis' className='imag' />

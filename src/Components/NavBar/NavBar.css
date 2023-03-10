@@ -64,14 +64,13 @@
     background-color: white;
     padding: 10px 10px;
     position: absolute;
-    top: 135px;
-    left: 29.7%;
+    top: 85px;
+    left: 30.5%;
     z-index: 100;
     -webkit-filter: drop-shadow(0px 2px 4px rgba(130,130,130,1));
     filter        : drop-shadow(0px 2px 4px rgba(130,130,130,1));  
     display: flex;
     flex-wrap: wrap;
-    /* color: white; */
     cursor: pointer;
 }
 
@@ -126,11 +125,14 @@ color:rgba(0, 0, 0, 0.566);
    transition: all 0.7s;    
 }
 .nameWrapp{
-    height: 50px;
+    height: 60px;
     text-align: start; 
-    margin-left: 150px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3px; 
     padding-bottom: 3px; 
-    color: white; 
+    color: black; 
     font-family: cursive;  
     transition: all 1.7s;
     font-size: 35px;

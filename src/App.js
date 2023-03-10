@@ -5,8 +5,8 @@ import Home from '../src/Components/Home/Home'
 import Navbar from '../src/Components/NavBar/Navbar'
 import About from '../src/Components/About/About'
 import Afrocusoul from '../src/Components/Afrocusoul/Mission'
-import Online from '../src/Components/Afrocusoul/Workshops/Online'
-import Inperson from '../src/Components/Afrocusoul/Workshops/Inperson'
+import Service from '../src/Components/Afrocusoul/Service/Service'
+import ArtistWork from '../src/Components/Afrocusoul/ArtistWork/ArtistWork'
 import Galery from '../src/Components/Galery/Galery'
 import Videos from '../src/Components/Galery/Videos'
 import Contact from '../src/Components/Contact/Contact'
@@ -23,8 +23,8 @@ function App() {
           <Route path='/Events' element={<Events/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path ='/afrocusoul' element={<Afrocusoul/> }/>
-          <Route path='/afrocusoul/workshops/online' element={<Online/>}/>
-          <Route path='/afrocusoul/workshops/inperson' element={<Inperson/>}/>
+          <Route path='/afrocusoul/Service/Service' element={<Service />}/>
+          <Route path='/afrocusoul/ArtistWork/ArtistWork' element={<ArtistWork />}/>
           <Route path ='/galery' element={<Galery/> }/>
           <Route path='/galery/videos' element={<Videos/>}/>
           <Route path ='/contact' element={<Contact/> }/>
