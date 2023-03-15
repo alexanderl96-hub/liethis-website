@@ -34,7 +34,7 @@ const Home = () => {
             </div>
             <div className="divTextwrap" style={{margin: 'auto',  backgroundColor: '#f2f2f2', height: '530px', }}>
                 <h2 className="divTextwraph2" style={{marginTop: '70px'}}>The power of creative Art </h2>
-                <div style={{fontWeight: 'normal', lineHeight: '1.5', wordSpaing: '1px',textAlign: 'justify', width: '380px'}}>
+                <div style={{fontWeight: 'normal', lineHeight: '1.5', wordSpaing: '1px',textAlign: 'justify', }}>
                 COMUNIDADES Afrodesendientes together, we can rewrite our story, amend what freedom is, and find joy in our shades. OUR NARRATIVES ARE HERE!</div>
             
                 <div style={{fontWeight: 'normal', lineHeight: '1.6', padding: '8%'}}>

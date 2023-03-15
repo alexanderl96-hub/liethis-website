@@ -50,7 +50,7 @@ function handelVideos (e){
     <div className='mainAfro'>
       <div style={{display: 'flex', justifyContent:'space-around', marginTop: '50px'}}>
         <div style={{width: '50%'}}>
-           <img src={Liethis} alt ='' style={{width: '410px', height: '500px', borderRadius: '1px'}}/>
+           <img src={Liethis} alt ='' style={{marginTop: '3.5%',width: '410px', height: '500px', borderRadius: '1px', boxShadow: '0px 0px 9px 7px #cccc7d'}}/>
         </div>
         <div style={{width: '50%', display: 'flex',flexDirection: 'column', justifyContent: 'center', 
         alignItems: 'center', padding: '5%',}}>
@@ -83,7 +83,7 @@ function handelVideos (e){
         <div style={{margin: '50px'}}>
               <h2 style={{fontSize: '30px'}}>Digital Work</h2>
         </div>
-        <div style={{ display:'flex',  justifyContent: 'space-around', gap: '20%', flexWrap: 'wrap'}}>
+        <div style={{ display:'flex',  justifyContent: 'space-around', gap: '20%', flexWrap: 'wrap', marginBottom: '50px'}}>
          
 
           <div>
