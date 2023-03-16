@@ -10,39 +10,26 @@ import navIcon5 from '../../Images/wireframe-globe.svg'
 
 const Navbar = () => {
   const [open , setOpen] = useState('false')
-  console.log(open)
 
   return (
     <div className="mainContainer">
-       <div  className= 'nameWrapp2'> </div>
-      
-     
-         {/* <div className="mainWrap">
-              <div ><Link to={'/Home'} className='linksWrapper'>Home </Link></div> 
-              <div ><Link to={'/about'} className='linksWrapper'>About</Link></div> 
-              <div ><Link to={'/afrocusoul'} className='linksWrapper'>Afrocusoul Dance & Wellness</Link></div> 
-              <div ><Link to={'/galery'} className='linksWrapper'>Galery</Link></div> 
-              <div ><Link to={'/contact'} className='linksWrapper'>Contact</Link></div>
-         </div> */}
-         <div style={{display: 'flex', justifyContent: 'space-around', alignItems: 'center', padding: '10px'}}>
+    
+         <div className="NavBarHolder">
+
          <div className="mainWrap">
               <div><Link to={'/'} className='linksWrapper'>Home </Link></div> 
               <div><Link to={'/Events'} className='linksWrapper'>Upcoming Events</Link></div> 
               <div><Link to={'/galery'} className='linksWrapper'>Courses</Link></div> 
-              <div style={{cursor: 'pointer', color: 'white', marginLeft: '10px'}}
-               
+              <div 
+                className='nav-sectionMore'
                 onMouseEnter={()=> setOpen('true')}
                 onMouseLeave={()=> setOpen('false')}
-               
-               > More</div> 
+                > More</div> 
                {open === 'true' &&
               <div 
               onMouseEnter={()=> setOpen('true')}
               onMouseLeave={()=> setOpen('false')}
               className='submenu'>
-                 {/* 
-                 <div style={{margin:'3px'}}><Link to={'/galery'} className=''>Galery</Link></div> 
-                 <div style={{margin:'3px'}}><Link to={'/contact'} className=''>Contact</Link></div>  */}
                  <div className='linksDance' >
                     <Link to={'/about'} className='linksDanceEnside' >About</Link>
                  </div> 
@@ -59,12 +46,8 @@ const Navbar = () => {
                     <Link to={'/contact'} className='linksDanceEnside' >Contact</Link>
                  </div> 
                 </div>}
-
-              {/* <div><Link to={'/about'} className='linksWrapper'>About</Link></div> 
-              <div><Link to={'/afrocusoul'} className='linksWrapper'>Afrocusoul Dance & Wellness</Link></div> 
-              <div><Link to={'/galery'} className='linksWrapper'>Galery</Link></div> 
-              <div><Link to={'/contact'} className='linksWrapper'>Contact</Link></div> */}
          </div>
+
          <div className='social-icon'>
                {/* <a href="https://www.facebook.com/OYUOROAFROCUBANEXPERIMENTALDANCEENSEMBLE"><img src={navIcon1} alt='' /></a> */}
                <a href="https://www.instagram.com/afrocusoultravel/"><img src={navIcon3}  alt='' /></a>
