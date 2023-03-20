@@ -29,7 +29,7 @@ const Contact = () => {
   }
 console.log(nameUser)
   return (
-    <div style={{display: 'flex', justifyContent: 'center', gap: '5%', marginTop: '50px', marginBottom: '20px'}}> 
+    <div className='mainContainerForm' > 
             <div className="contact">
               <form ref={form}  onSubmit={handleSubmit} className='contactForm'>
                   <label className='contactLabel' > Name and Last Name :</label>
