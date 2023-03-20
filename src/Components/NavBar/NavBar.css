@@ -228,7 +228,7 @@ color:rgba(0, 0, 0, 0.566);
             .submenu{
                 width: 220px;
                 top: 96.8px;
-                left: 295px;
+                left: 300px;
             }
             .submenu::before{
                 left: 95px;

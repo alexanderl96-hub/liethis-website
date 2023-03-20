@@ -48,8 +48,8 @@ function handelVideos (e){
 
   return (
     <div className='mainAfro'>
-      <div style={{display: 'flex', justifyContent:'space-around', marginTop: '50px'}}>
-        <div style={{width: '50%'}}>
+      <div className='mainAfroWrapper' >
+        <div className='mainAfroWrapper-DivImg' >
            <img src={Liethis} alt ='' style={{marginTop: '3.5%',width: '410px', height: '500px', borderRadius: '1px', boxShadow: '0px 0px 9px 7px #cccc7d'}}/>
         </div>
         <div style={{width: '50%', display: 'flex',flexDirection: 'column', justifyContent: 'center', 
