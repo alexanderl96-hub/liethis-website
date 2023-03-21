@@ -1,9 +1,12 @@
-import React, { useRef} from 'react';
+import React, {useState, useRef} from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css'
 import liethi2 from '../../Images/imagesliethis2.jpeg'
 
 const Contact = () => {
+  const [inputValue, setInputValue] = useState('');
+  // const [emailError, setEmailError] = useState('');
+  const [inputValueEmail, setInputValueEamil] = useState('');
    const form = useRef();
    let nameUser = '';
 
@@ -15,6 +18,34 @@ const Contact = () => {
     let {value} = e.target
      nameUser = value
    }
+
+   const handleInput = (e) => {
+    const formattedPhoneNumber = formatPhoneNumber(e.target.value);
+    setInputValue(formattedPhoneNumber);
+  };
+
+ 
+
+  function formatPhoneNumber(value) {
+ 
+    if (!value) return value;
+  
+   
+    const phoneNumber = value.replace(/[^\d]/g, '');
+    const phoneNumberLength = phoneNumber.length;
+    if (phoneNumberLength < 4) return phoneNumber;
+  
+    if (phoneNumberLength < 7) {
+      return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;
+    }
+  
+    return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(
+      3,
+      6
+    )}-${phoneNumber.slice(6, 10)}`;
+  }
+
+
 
   const handleSubmit = (e)=>{
     e.preventDefault();
@@ -37,13 +68,14 @@ console.log(nameUser)
                   <label className='contactLabel' >Email :</label>
                   <input type="email" name="from_email"  className="contactInput" required />
                   <label  className='contactLabel'>Phone :</label>
-                  <input  type="text" name="phone" className="contactInput"  />
+                  <input  type="text" name="phone" className="contactInput" 
+                   onChange={(e) => handleInput(e)} value={inputValue}  />
                   <label className='contactLabel'>Message :</label>
                   <textarea name="message" className="contactTextarea" required/>
                   <button type="submit" className="contactSubmit" value="Send" >Send</button>
               </form>
             </div>
-            <div className="homeImgDiv" >
+            <div className="homeImgDiv" > 
                 <img src={liethi2} alt='Liethis' className='imag3' />
             </div>
 
