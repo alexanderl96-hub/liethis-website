@@ -1,8 +1,5 @@
 import React from 'react'
-import { FaYoutube, FaInstagram, FaFacebook, FaWifi,
-   FaWikipediaW, FaWind, FaWindowClose, FaWindowMaximize, 
-   FaWindowMinimize, FaWindowRestore, FaWindows, FaWineBottle, 
-   FaWineGlass, FaWineGlassAlt, FaWix, FaWizardsOfTheCoast, } from 'react-icons/fa'
+import { FaYoutube, FaInstagram, FaFacebook } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import './Footer.css'
 

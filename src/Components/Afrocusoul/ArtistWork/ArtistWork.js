@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './ArtistWork.css'
 
 const Sandunga = () => {
   const videos = ['https://www.youtube.com/watch?v=xiiCjuUIM4o&feature=youtu.be', 
@@ -7,14 +8,14 @@ const Sandunga = () => {
                   'https://www.youtube.com/watch?v=PyJq6r03Vpo',
                   'https://www.youtube.com/watch?v=BIGubWZ6aLo']
   return (
-    <div>
+    <div className="artwork-Container">
        {/* <h3 style={{textAlign: 'start', marginLeft: '15px'}} ><Link to={'/afrocusoul'} style={{textDecoration: 'none', color: 'black'}} >Back</Link> </h3> */}
          <div>
-          <div style={{margin: '25px', fontSize: '30px', fontWeight: 400, }}>Artist Work</div>
+          <div className="artwork-Container-title" >Artist Work</div>
          </div>
-         <div>
-              <div style={{marginTop: '40px', fontSize: '25px', fontWeight: 300, }} >PROFESSIONAL  EXPERIENCE:</div>
-              <div style={{padding: '5%',  fontSize: '20px',}}>Lead Dancer | Afro-Cuban Experimental Dance Ensemble Oyu Oro
+         <div className="artwork-Container-parragraph" >
+              <div  >PROFESSIONAL  EXPERIENCE:</div>
+              <div  >Lead Dancer | Afro-Cuban Experimental Dance Ensemble Oyu Oro
                    The Caribbean Festival, | Jacob Pillow Dance Festival | African Dance Festival| La Mama Annex 
                    Theater, | WOFABE, NJ | African Music and Dance Festival, Los Angeles | Harlem Havana Music and 
                    Culture Festival | Folkloric Ballet of the East in Cuba, | Folkloric Ballet Cutumba Cuba | The Salsa 
@@ -24,7 +25,7 @@ const Sandunga = () => {
          </div>
          <div>
               <div>
-                  <div  style={{fontSize: '25px',  fontWeight: 300, textDecoration: 'underline' }}>Articles/Artist Highlights</div>
+                  <div  style={{fontSize: '25px',  fontWeight: 300, textDecoration: 'underline' }} className='artwork-Container-articules'>Articles/Artist Highlights</div>
               </div>
               <div style={{margin: '20px', }}>
                    <div style={{margin: '3px', }}>PBS. Barre Feet with Mickela Mallozzi // Cubano </div>
