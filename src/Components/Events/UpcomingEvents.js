@@ -1,10 +1,11 @@
 import React from 'react'
+import './events.css'
 
 const UpcomingEvents = () => {
   return (
-    <div style={{minHeight: '551px', margin: 'auto'}}>
-        <h3 >UpcomingEvents</h3>
-        <p style={{marginTop: '15%', fontSize: '25px'}}>No upcoming events at the moment</p>
+    <div style={{}} className='events-container'>
+        <h3 >Upcoming Events</h3>
+        <p style={{}} className='events-container-none' >No upcoming events at the moment</p>
     </div>
   )
 }

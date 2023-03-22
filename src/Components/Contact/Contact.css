@@ -94,7 +94,7 @@
             }
             .contactTextarea{
                 height: 300px;
-                width: 700px;
+                width: 685px;
                 font-size: 19px;
             }
             .contactSubmit{
@@ -129,7 +129,7 @@
                 }
                 .contactTextarea{
                     height: 250px;
-                    width: 500px;
+                    width: 485px;
                     font-size: 19px;
                 }
                 .contactSubmit{
@@ -163,7 +163,7 @@
                 }
                 .contactTextarea{
                     height: 150px;
-                    width: 300px;
+                    width: 285px;
                     font-size: 16px;
                 }
                 .contactSubmit{
@@ -192,12 +192,12 @@
                 }
                 .contactInput{
                     width: 250px; 
-                    height: 25px; 
+                    height: 22px; 
                     font-size: 16px;
                 }
                 .contactTextarea{
-                    height: 90px;
-                    width: 250px;
+                    height: 100px;
+                    width: 235px;
                     font-size: 16px;
                 }
                 .contactSubmit{
@@ -226,11 +226,11 @@
                 }
                 .contactInput{
                     width: 230px; 
-                    height: 22px; 
+                    height: 20px; 
                     font-size: 15px;
                 }
                 .contactTextarea{
-                    height: 95px;
+                    height: 100px;
                     width: 215px;
                     font-size: 15px;
                 }
@@ -256,15 +256,15 @@
                     margin-top: 30px; 
                 }
                 .contactLabel{
-                    font-size: 18px;
+                    font-size: 17px;
                 }
                 .contactInput{
                     width: 200px; 
-                    height: 18px; 
+                    height: 17px; 
                     font-size: 15px;
                 }
                 .contactTextarea{
-                    height: 75px;
+                    height: 80px;
                     width: 185px;
                     font-size: 15px;
                 }
@@ -290,15 +290,15 @@
                     margin-top: 30px; 
                 }
                 .contactLabel{
-                    font-size: 16px;
+                    font-size: 15px;
                 }
                 .contactInput{
                     width: 180px; 
-                    height: 16px; 
+                    height: 15px; 
                     font-size: 14px;
                 }
                 .contactTextarea{
-                    height: 65px;
+                    height: 70px;
                     width: 165px;
                     font-size: 14px;
                 }
@@ -324,15 +324,15 @@
                     margin-top: 30px; 
                 }
                 .contactLabel{
-                    font-size: 16px;
+                    font-size: 15px;
                 }
                 .contactInput{
                     width: 180px; 
-                    height: 16px; 
+                    height: 15px; 
                     font-size: 14px;
                 }
                 .contactTextarea{
-                    height: 65px;
+                    height: 70px;
                     width: 165px;
                     font-size: 14px;
                 }
