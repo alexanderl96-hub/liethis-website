@@ -1,0 +1,84 @@
+.wrap{
+    display: flex; 
+    justify-content:space-around; 
+    align-items: center; 
+    width: 420px; 
+    height: 200px;
+    background-color: rgb(243, 236, 236); 
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    border: .5px solid rgba(0, 0, 0, 0);
+    box-shadow: 1px 1px 5px 8px #0000;
+    margin: 1%;
+}
+.wrap2{
+    display: flex; 
+    justify-content:center; 
+    align-items: center; 
+    width: 100px; 
+    height: 100px;
+    background-color: rgb(4, 0, 255); 
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    border: .5px solid rgba(0, 0, 0, 0.23);
+    box-shadow: 1px 1px 5px 8px #0000;
+}
+.wrap:hover{
+    /* transform: scale(1.4); */
+    transition: all .3s ease-in-out;
+    border: .5px solid rgba(0, 0, 0, 0.23);
+    box-shadow: 1px 1px 3px 4px #0000005b;
+}
+.wrap2:hover{
+    /* transform: scale(1.4); */
+    transition: all .3s ease-in-out;
+    border: .5px solid rgba(0, 0, 0, 0.23);
+    box-shadow: 1px 1px 3px 4px #0000005b;
+}
+
+.container1 {
+    padding: 10px;
+    width: 250px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+}
+.container1 :nth-child(1){
+ font-weight: bold;
+ color: black;
+ margin-top: -40px;
+}
+.container1 :nth-child(2){
+    color: black;
+    font-size: 13px;
+    margin-top: 30px;
+    letter-spacing: .3px;
+    word-spacing: 1px;
+
+}
+
+.container2 :nth-child(1){
+    padding: 5px;
+    float: left;
+    top: 10px;
+    left: 120px;
+    position: relative;
+    z-index: 100;
+    color: rgb(255, 248, 248);
+    background-color: rgba(66, 66, 66, 0.569);
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.my-Image{
+    width: 190px; 
+    height: 190px;
+    border-radius: 50%;
+    margin-top: -25px;
+}
