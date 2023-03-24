@@ -53,10 +53,10 @@ const AfrosoulNYC = () => {
           onClick={jsPdfGenerate}
            style={{margin: '20px', width: '150px', height: '50px', border: 'none', display: 'flex', boxShadow: '1px 1px 4px 3px #000000',
                     justifyContent: 'center', alignItems: 'center', backgroundColor: '#20639b', borderRadius: '50px', cursor: 'pointer' }}>Download PDF</div>
-        {/* <h1 className='title'></h1>
+        <h1 className='title'></h1>
         <div className='afrosoulNYtext'> 
             
-        </div> */}
+        </div>
         {/* <div 
         style={{cursor: 'pointer', display: 'flex', justifyContent: 'space-between', padding: '10px', marginTop: '50px'}}>
             <div style={{fontSize: '30px', fontWeight: 'bold',marginLeft: '80px' }} >Orders</div>
