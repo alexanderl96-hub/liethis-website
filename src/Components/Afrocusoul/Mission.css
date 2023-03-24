@@ -21,6 +21,43 @@
     border-radius: 1px; 
     box-shadow: 0px 0px 9px 7px #cccc7d; 
 }
+.secondContainer-AfroShadesDiv{
+    width: 50%; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 5%;
+    margin: 0 auto;
+}
+.secondContainer-AfroShadesDiv-Title{
+    margin: 10px; 
+    font-weight: bold; 
+    font-size: 25px;  
+}
+.secondContainer-AfroShadesDiv-Parragraph{
+    margin: 10px; 
+    line-height: 25px;
+}
+.secondContainer-AfroShadesDiv-Bottom{
+    font-size: 15px;  
+    margin: 17px; 
+    width: 100px; 
+    height: 50px; 
+    border: 1px solid gray; 
+    color: rgb(99, 99, 99);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    transition: all .3s;
+    cursor: pointer;
+}
+.secondContainer-AfroShadesDiv-Bottom:hover{
+    border: 1px solid rgba(128, 128, 128, 0.381); 
+    color: rgb(47, 46, 46);
+    transition: all .3s;
+}
 .mainAfroH2{
     color: white;
     padding-top: 10px;
@@ -62,13 +99,13 @@
 .description{
     float: left;
     margin: 0 auto;
-    color: #fff;
+    color: #ffffff;
     border-radius: 8px;
     width: 600px;
     height: 270px;
     box-shadow: 0px 0px 5px 15px #0e60034d;
     background-color: #10410c;
-    padding: 10px 10px;
+    padding: 15px 15px;
     position: absolute;
     top: 270px;
     left: 49.7%;
@@ -78,6 +115,17 @@
     flex-wrap: wrap;
     cursor: pointer;
 }
+.description-Close{
+    font-size: 15px; 
+    letter-spacing: .5px;
+    height: 20px;
+    cursor: pointer; 
+    display: flex;
+    margin-left: 90%; 
+    color: #fff;
+}
+
+
 .react-player{
     position: absolute;
     border-radius: 50%;
@@ -98,7 +146,69 @@
     border-bottom: 15px solid  transparent;
 
 }
+.description-Title{
+    display: flex; 
+    justify-content: center; 
+    text-decoration: underline; 
+    margin-bottom: 10px;
+}
+.description-Parragraph{
+    font-size: 15px;
+    letter-spacing: .15px;
+    word-spacing: 1.5px;
+    line-height: 17.5px;
+    text-align: justify;
+}
+.description-Quote{
+    margin: 10px auto;
+}
 
+.containerPlayer-Channel{
+    margin: 2%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+.containerPlayer-DivTilte{
+    margin: 50px;
+}
+.containerPlayer-DivTilte > h2{
+    font-size: 30px;
+}
+.containerPlayer-Wrapper{
+    display: flex;  
+    justify-content: space-around; 
+    gap: 30%; 
+    flex-wrap: wrap; 
+    margin-bottom: 50px;
+}
+.containerPlayer-Wrapper-Div-Inside_ReactPlayer{
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%; 
+    box-shadow: 0px 0px 8px 7px #cccccc;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  
+    position: relative; 
+    padding-top: 4%;
+}
+.containerPlayer-Wrapper-Div-Bottom{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.containerPlayer-Wrapper-Div-Bottom_bottom{
+    width: 110px; 
+    background-color: #ffa500; 
+    box-shadow: 3px 5px 7px gray;
+    padding: 6px; 
+    font-size: 18px; 
+    color: #fff; 
+    cursor: pointer;
+}
 
 
  /*Mack Boock Pro (max-width: 3456px; max-heigth: 2234px;)*/
