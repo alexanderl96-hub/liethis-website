@@ -7,12 +7,14 @@ import './Mission.css'
 import Liethis from '../../Images/liethisMadas.jpg'
 
 const Mission = () => {
+  const videoWidth = getComputedStyle(document.documentElement).getPropertyValue('--video-youtube-Width');
+  const videoHeight = getComputedStyle(document.documentElement).getPropertyValue('--video-youtube-Height');
   const [play, setPlay] = useState(false)
   const [play2, setPlay2] = useState(false)
   const [play3, setPlay3] = useState(false)
   const [num, setNum]  = useState(0)
   const [description, setDescriptions] = useState('false')
-  const videos = ['https://www.youtube.com/embed/CmSeqBoslKg?controls=0&showinfo=0',
+  const videos = ['https://www.youtube.com/embed/CmSeqBoslKg?controls=0&showinfo=1',
                    'https://www.youtube.com/watch?v=nDjmoFa8rYA&feature=youtu.be',
                     'https://www.youtube.com/watch?v=J0IXBQcyhgg&feature=youtu.be']
 
@@ -95,8 +97,8 @@ function handelVideos (e){
                         playing={play} 
                         progressInterval={1000}
                         controls={true}
-                        width={'250px'} 
-                        height={'260px'} 
+                        width={videoWidth} 
+                        height={videoHeight} 
                         muted={false} 
                         className="react-player"
                       />
@@ -118,8 +120,8 @@ function handelVideos (e){
                         playing={play2} 
                         progressInterval={1000}
                         controls={true}
-                        width={'250px'} 
-                        height={'260px'} 
+                        width={videoWidth} 
+                        height={videoHeight} 
                         muted={false} 
                         className="react-player"
                       />
@@ -141,8 +143,8 @@ function handelVideos (e){
                         playing={play3} 
                         progressInterval={1000}
                         controls={true}
-                        width={'250px'} 
-                        height={'260px'} 
+                        width={videoWidth} 
+                        height={videoHeight} 
                         muted={false} 
                         className="react-player"
                       />
