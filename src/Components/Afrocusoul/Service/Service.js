@@ -2,12 +2,19 @@ import React, {useState, PureComponent} from 'react'
 import './Service.css'
 import jsPDF from 'jspdf'
 import imageDog from '../../../Images/imagesDog.jpeg'
+import useWindowSize from 'react-use/lib/useWindowSize'
+import Confetti from 'react-confetti'
 
 const numbersSquare = [1,2,3,4,5,6,7,8]
 
 const AfrosoulNYC = () => {
   const [classNumber, setClassNumber] = useState(0)
   const [open , setOpen] = useState('flase')
+  const [generateColor, setGenerateColor] = useState('')
+  const [storageColor, setStorageColor] = useState([])
+  const [guessMyColor, setGuessMyColor] = useState([])
+  const { width, height } = useWindowSize()
+  const [congrast, setCongrats] =useState('false')
   // const image = 'https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130,g_auto/u5af76jhqhcyvtng1rku'
 
   function handelId (e){
@@ -47,16 +54,118 @@ const AfrosoulNYC = () => {
     doc.save('generate.pdf')
   }
 
+  function generate (){
+    let myArray = ['a','b','c','d','e','f', 0,1,2,3,4,5,6,7,8,9]
+    let i = 0;
+    let guessColor = []
+    let stringStorage2 = ''
+
+    while(guessColor.length < 3 ){
+      let stringStorage = ''
+
+          while( i < 6){
+            const r = myArray[Math.floor(Math.random()* myArray.length)]
+            stringStorage += r
+            stringStorage2 += r
+            i++
+          }
+          i = 0
+
+          if(guessColor.length % 2 === 0){
+            guessColor.unshift('#'.concat(stringStorage))
+          }else{
+            guessColor.push('#'.concat(stringStorage))
+          }
+          // guessColor.unshift('#'.concat(stringStorage))
+          
+    }
+
+    // while( i < 6){
+    //   const r = myArray[Math.floor(Math.random()* myArray.length)]
+     
+    //   i++
+    // }
+  
+   
+    // storageArray.push('#'.concat(stringStorage))
+    // storageColor.push('#'.concat(stringStorage))
+    setStorageColor(storageColor.unshift('#'.concat(stringStorage2.slice(0,6))))
+    setGenerateColor('#'.concat(stringStorage2.slice(0,6)))
+    // if(storageColor.length > 10 ){
+    //   setStorageColor(storageColor.slice(0,10))
+    // }
+   
+    setStorageColor(storageColor.slice(0,10))
+    setGuessMyColor(guessColor.sort())
+    setCongrats('false')
+  }
+
+  function HandelMyColor (e){
+  //  console.log(typeof guessMyColor[Math.floor(Math.random()* guessMyColor.length)])
+    if(e.target.id ===  generateColor){
+          //  alert('Congratulations you found the right color.')
+           setCongrats('true')
+           console.log('yes')
+    }else{
+      console.log('no')
+      setCongrats('false')
+      
+    }
+
+  }
+
   return (
     <div>
+      {congrast === 'true' &&<Confetti
+      width={width}
+      height={height}
+    />} 
       <div 
           onClick={jsPdfGenerate}
            style={{margin: '20px', width: '150px', height: '50px', border: 'none', display: 'flex', boxShadow: '1px 1px 4px 3px #000000',
                     justifyContent: 'center', alignItems: 'center', backgroundColor: '#20639b', borderRadius: '50px', cursor: 'pointer' }}>Download PDF</div>
-        <h1 className='title'></h1>
-        <div className='afrosoulNYtext'> 
-            
-        </div>
+        <h1 className='title'>Holaaaaaaaa</h1>
+        <div className='afrosoulNYtext'> Todoooooooo</div>
+        <div style={{display: 'flex',}}>
+        <div 
+            onClick={generate}
+            style={{margin: '20px', width: '150px', height: '50px', border: 'none', display: 'flex', boxShadow: '1px 1px 4px 3px #000000',
+                    justifyContent: 'center', alignItems: 'center', backgroundColor: '#20639b', borderRadius: '50px', cursor: 'pointer', color: 'white' }} >Generate</div>
+                    <div  style={{width: '300px', height: '300px', backgroundColor: `${generateColor}`, borderRadius: '2px', margin: '0 auto', display: 'flex', justifyContent: 'center',
+                     alignItems: 'center', flex: 1}}></div>
+
+
+
+         <div 
+             onClick={generate}
+             style={{margin: '0 auto', width: '450px', height: '300px', display: 'flex', flexWrap: 'wrap', 
+              justifyContent: 'center', alignItems: 'center', gap: '10px', flex: 3}}>{storageColor.map((a, ind)=>{
+                return (
+                   <div style={{display: 'flex', flexDirection: 'column'}} key={ind} >
+                    <div style={{display: 'flex', backgroundColor: `${a}`, height: '13px', width: '60px'}}></div>
+                     {/* {a} */}
+                   </div>
+                )
+              })}
+               </div>
+               </div>
+               {congrast === 'true' &&  <div style={{transition: '5000ms fontSize',  transform: 'scale(5)', fontSize: '10px'}}>Yes</div>}
+           <div 
+            //  onClick={generate}
+             style={{margin: '0 auto', width: '450px', height: '300px', display: 'flex', flexWrap: 'wrap', 
+              justifyContent: 'center', alignItems: 'center', gap: '10px', flex: 3}}>{guessMyColor.map((a, ind)=>{
+                return (
+                   <div style={{display: 'flex', flexDirection: 'column'}} key={ind} id={a}>
+                    <div id={a}
+                       onClick={HandelMyColor} style={{display: 'flex', backgroundColor: `gray`,
+                        justifyContent: 'center', alignItems: 'center', borderRadius: '40px',
+                       height: '20px',cursor: 'pointer' , padding: '2px', color: '#fff', fontSize: '12px'}}>{a}</div>
+                     
+                   </div>
+                )
+              })}
+               </div>
+               {/* </div> */}
         {/* <div 
         style={{cursor: 'pointer', display: 'flex', justifyContent: 'space-between', padding: '10px', marginTop: '50px'}}>
             <div style={{fontSize: '30px', fontWeight: 'bold',marginLeft: '80px' }} >Orders</div>
