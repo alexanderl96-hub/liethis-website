@@ -1,4 +1,4 @@
-import React, {useState, PureComponent} from 'react'
+import React, {useState, PureComponent, useEffect} from 'react'
 import './Service.css'
 import jsPDF from 'jspdf'
 import imageDog from '../../../Images/imagesDog.jpeg'
@@ -15,6 +15,10 @@ const AfrosoulNYC = () => {
   const [guessMyColor, setGuessMyColor] = useState([])
   const { width, height } = useWindowSize()
   const [congrast, setCongrats] =useState('false')
+  const [count, setCount] = useState(0)
+  const [onEffet, setOnEffet] = useState(false)
+  const [wrongColor, setWrongColor] = useState([1, 2, 3])
+  const [saveColor, setSaveColor] = useState([])
   // const image = 'https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130,g_auto/u5af76jhqhcyvtng1rku'
 
   function handelId (e){
@@ -60,7 +64,7 @@ const AfrosoulNYC = () => {
     let guessColor = []
     let stringStorage2 = ''
 
-    while(guessColor.length < 3 ){
+    while(guessColor.length < 5 ){
       let stringStorage = ''
 
           while( i < 6){
@@ -94,26 +98,60 @@ const AfrosoulNYC = () => {
     // if(storageColor.length > 10 ){
     //   setStorageColor(storageColor.slice(0,10))
     // }
-   
+    setOnEffet(true)
     setStorageColor(storageColor.slice(0,10))
     setGuessMyColor(guessColor.sort())
     setCongrats('false')
+    setWrongColor([1,2,3])
   }
 
   function HandelMyColor (e){
+
   //  console.log(typeof guessMyColor[Math.floor(Math.random()* guessMyColor.length)])
     if(e.target.id ===  generateColor){
           //  alert('Congratulations you found the right color.')
            setCongrats('true')
-           console.log('yes')
+           setWrongColor([1,2,3])
     }else{
-      console.log('no')
       setCongrats('false')
-      
+      setWrongColor(wrongColor.slice(0, (wrongColor.length - 1)))
+      for( var i = 0; i < guessMyColor.length; i++){ 
+    
+        if ( guessMyColor[i] === e.target.id) { 
+          guessMyColor.splice(i, 1); 
+        }
+    
+    }
+      setGuessMyColor(guessMyColor)
     }
 
   }
+console.log(guessMyColor)
+  
+    useEffect(()=>{
+     
+      const interval = setInterval(()=> {
+        if(onEffet === true && count < 100){
+          generate()
+           setCount(count + 1)
+        }else{
+          setOnEffet(false)
+          setCount(0)
+        }
+       
+      } , 1);
+      return ()=> clearInterval(interval);
+    },[count, onEffet])
+   console.log(count, 'check count')
 
+   function handelSaveColor (e) {
+
+      if(!saveColor.includes(e.target.id)){
+        setSaveColor(saveColor.concat(e.target.id))
+      }
+   }
+   console.log(saveColor,'asjghja')
+ 
   return (
     <div>
       {congrast === 'true' &&<Confetti
@@ -137,12 +175,14 @@ const AfrosoulNYC = () => {
 
 
          <div 
-             onClick={generate}
+            //  onClick={generate}
              style={{margin: '0 auto', width: '450px', height: '300px', display: 'flex', flexWrap: 'wrap', 
               justifyContent: 'center', alignItems: 'center', gap: '10px', flex: 3}}>{storageColor.map((a, ind)=>{
                 return (
-                   <div style={{display: 'flex', flexDirection: 'column'}} key={ind} >
-                    <div style={{display: 'flex', backgroundColor: `${a}`, height: '13px', width: '60px'}}></div>
+                   <div 
+                        
+                        style={{display: 'flex', flexDirection: 'column', cursor: 'pointer'}} key={ind} id={a}>
+                    <div onClick={handelSaveColor} id={a} style={{display: 'flex', backgroundColor: `${a}`, height: '13px', width: '60px'}}></div>
                      {/* {a} */}
                    </div>
                 )
@@ -150,21 +190,43 @@ const AfrosoulNYC = () => {
                </div>
                </div>
                {congrast === 'true' &&  <div style={{transition: '5000ms fontSize',  transform: 'scale(5)', fontSize: '10px'}}>Yes</div>}
+               {wrongColor.length === 0 &&  <div style={{transition: '5000ms fontSize',  transform: 'scale(5)', fontSize: '10px'}}>You Lose</div>}
            <div 
             //  onClick={generate}
              style={{margin: '0 auto', width: '450px', height: '300px', display: 'flex', flexWrap: 'wrap', 
               justifyContent: 'center', alignItems: 'center', gap: '10px', flex: 3}}>{guessMyColor.map((a, ind)=>{
                 return (
                    <div style={{display: 'flex', flexDirection: 'column'}} key={ind} id={a}>
-                    <div id={a}
+                    {wrongColor.length > 0 && <div id={a}
                        onClick={HandelMyColor} style={{display: 'flex', backgroundColor: `gray`,
                         justifyContent: 'center', alignItems: 'center', borderRadius: '40px',
-                       height: '20px',cursor: 'pointer' , padding: '2px', color: '#fff', fontSize: '12px'}}>{a}</div>
+                       height: '20px', width: '60px', cursor: 'pointer' , padding: '4px', 
+                       color: '#fff', fontSize: '12px'}}>{a}</div>}
                      
                    </div>
                 )
               })}
+              {wrongColor.map((a)=>{
+                return(
+                  <>
+                    {storageColor.length > 0 &&  <div>{a}</div> }
+                  </>
+                )
+              })}
                </div>
+
+               <div style={{width: '600px',height: '200px', border:'2px solid', marginLeft: '40%',
+                display: 'flex',  flexWrap: 'wrap'}}>{ saveColor.map((a,ind)=>{
+                return(
+                  <div style={{}} >
+                     <div 
+                     style={{ backgroundColor:`${a}`, display: 'flex', justifyContent: 'center',
+                     width: '60px',height: '60px', alignItems: 'center'}}>
+                        
+                     </div>
+                  </div>
+                )
+               })}</div>
                {/* </div> */}
         {/* <div 
         style={{cursor: 'pointer', display: 'flex', justifyContent: 'space-between', padding: '10px', marginTop: '50px'}}>
